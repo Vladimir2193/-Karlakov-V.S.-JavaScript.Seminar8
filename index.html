@@ -33,21 +33,22 @@
 
     <ul>
         <li>
-            <button>Кнопка 1</button>
+            <button class="button">Кнопка 1</button>
         </li>
         <li>
-            <button>Кнопка 2</button>
+            <button class="button">Кнопка 2</button>
         </li>
         <li>
-            <button>Кнопка 3</button>
+            <button class="button">Кнопка 3</button>
         </li>
         <li>
-            <button>Кнопка 4</button>
+            <button class="button">Кнопка 4</button>
         </li>
     </ul>
 
     <script>
         "use strict";
+
         // 1. Необходимо вывести сообщение в консоль "все теги прогрузились", когда все теги будут созданы браузером.
 
         // document.addEventListener('DOMContentLoaded', function (e) {
@@ -70,6 +71,7 @@
         // const allEl = document.querySelector('body');
         // const superEl = allEl.querySelectorAll('.super_element');
         // console.log(allEl);
+        // console.log(superEl);
 
         // const pEl = document.querySelector('p');
         // console.log(pEl);
@@ -81,17 +83,35 @@
 
         // allEl.addEventListener('click', function (e) {
 
-        //     if (this.classList.contains('super_element') ===true) {
+        //     if (this.classList.contains('super_element')) {
         //         console.log('Класс "super_element" присутствует в элементе "div');
         //         console.log(e.target);
         //     }
-        //     else if(allEl.classList.contains('super_element')===false){
+        //     else {
         //         console.log('Класс отсутствует');
         //         console.log(e.target);
         //     }
         // });
 
+        // pEl.addEventListener('click', function (e) {
 
+        //     if (this.classList.contains('super_element')) {
+        //         console.log('Класс "super_element" присутствует в элементе "div');
+        //         console.log(e.target);
+        //     }
+           
+        // });
+        
+        // buttonSuperEl.addEventListener('click', function (e) {
+
+        //     if (this.classList.contains('super_element')) {
+        //         console.log('Класс "super_element" присутствует в элементе "div');
+        //         console.log(e.target);
+        //     }
+
+        // });
+
+       
         // 4. Сделайте, чтобы при наведении на textarea в консоли появлялось сообщение: "Вы навели на textarea."
 
         // const textAreaEl = document.querySelector('textarea');
@@ -106,12 +126,16 @@
 
         // const ulEl = document.querySelector('ul');
         // console.log(ulEl);
-        // const buttonEls = ulEl.querySelector('button');
-        // console.log(buttonEls);
 
         // ulEl.addEventListener('click', function (e) {
+        //     if (e.target.classList.contains('button')) {
         //         console.log(e.target.textContent);
+        //     } else {
+        //         console.log(e.currentTarget);
+        //     }
         // });
+
+        // При решении данного задания к кнопкам <button>, относящимся к списку <li>, был добавлен класс "button"
        
 
         // 6. Вопрос: Почему в console.log пишется сначала текст из 5 задания и только потом выводится текст из 3 задания,
